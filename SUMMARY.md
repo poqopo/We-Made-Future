@@ -4,7 +4,6 @@
 
 ## Group 1
 
-* [We Made Future 소개](group-1/we-made-future.md)
 * [Tokenomics](group-1/tokenomics.md)
 
 ## Group 2
