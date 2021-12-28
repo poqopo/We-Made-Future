@@ -14,3 +14,7 @@
 * [Play-2-Earn minigame](group-2/play-2-earn-minigame.md)
 * [Launchpad](group-2/launchpad.md)
 * [NFT marketplace](group-2/nft-marketplace.md)
+
+***
+
+* [랜딩페이지](https://tkdwns63.wixsite.com/my-site)
