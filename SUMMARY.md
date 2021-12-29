@@ -4,6 +4,7 @@
 
 ## Group 1
 
+* [About We-Made-Future](group-1/about-we-made-future.md)
 * [Tokenomics](group-1/tokenomics.md)
 
 ## Group 2

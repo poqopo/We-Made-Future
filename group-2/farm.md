@@ -1,5 +1,3 @@
 # Farm
 
-다른 Defi랑 똑같이 LP pool에 LP를 예치하면 보상으로 WMF를 받는 형식.
-
-이때, 단순히 Farm의 이자율 및 시세 차익 거래를 위한 유동성공급을 어느정도 줄이기 위해 deposit fee (4% deposit fee.)
+A, B 두 개의 코인을 LP 형태로 묶어서 예치하면 보상으로 WMF를 받을 수 있습니다. 단기 자금 이동으로 인한 WMF 코인의 변동성 감소를 위해 2%의 deposit fee가 있습니다.
