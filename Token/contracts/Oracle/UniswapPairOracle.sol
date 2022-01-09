@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
 pragma solidity =0.6.6;
 
-import '../../../DEX/core/contracts/interfaces/IUniswapV2Factory.sol';
-import '../../../DEX/core/contracts/interfaces/IUniswapV2Pair.sol';
+import "../../../DEX/contracts/interfaces/IUniswapV2Factory.sol";
+import "../../../DEX/contracts/interfaces/IUniswapV2Pair.sol";
 import '@uniswap/lib/contracts/libraries/FixedPoint.sol';
 
-import '../../../DEX/periphery/contracts/libraries/UniswapV2OracleLibrary.sol';
-import '../../../DEX/periphery/contracts/libraries/UniswapV2Library.sol';
+import "https://github.com/poqopo/We-Made-Future/blob/main/DEX/periphery/contracts/libraries/UniswapV2OracleLibrary.sol";
+import "https://github.com/poqopo/We-Made-Future/blob/main/DEX/periphery/contracts/libraries/UniswapV2Library.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 // Fixed window oracle that recomputes the average price for the entire period once every period
 // Note that the price average is only guaranteed to be over at least 1 period, but may be over a longer period
-contract UniswapPairOracle is Owned {
+contract UniswapPairOracle is Ownable {
     using FixedPoint for *;
     
     address timelock_address;
@@ -43,7 +43,7 @@ contract UniswapPairOracle is Owned {
         address tokenB, 
         address _owner_address, 
         address _timelock_address
-    ) public Owned(_owner_address) {
+    ) public Ownable(_owner_address) {
         IUniswapV2Pair _pair = IUniswapV2Pair(UniswapV2Library.pairFor(factory, tokenA, tokenB));
         pair = _pair;
         token0 = _pair.token0();
